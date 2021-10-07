@@ -23,7 +23,6 @@ describe('GET /user', function () {
   });
 
   it('not responds with json', function (done) {
-    done();
-    // request(app).get('/user2').set('Accept', 'text/html').expect('Content-Type', /json/).expect(200, done);
+    request(app).get('/user').set('Accept', 'text/html').expect('Content-Type', /json/).expect(200, done);
   });
 });
