@@ -1,6 +1,14 @@
-import { sum, divide } from '../utils';
+import { sum, divide } from '../app/utils';
 
 describe('utils test suit', () => {
+  beforeAll(() => {
+    console.log('before all tests');
+  });
+
+  afterAll(() => {
+    console.log('after all tests');
+  });
+
   it('should return 4', () => {
     const result = sum(2, 2);
     expect(result).toBe(4);

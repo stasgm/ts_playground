@@ -1,5 +1,6 @@
 type Gender = 'M' | 'F';
 
+/* istanbul ignore next */
 abstract class Person {
   speed: number;
   readonly name: string;
@@ -27,16 +28,18 @@ abstract class Person {
   }
 }
 
+/* istanbul ignore next */
 class Woman extends Person {
-  /*   laughing() {
-      console.log(`${this.name} смеетя так: Хи-хи`);
-    } */
+  laughing() {
+    console.log(`${this.name} смеетя так: Хи-хи`);
+  }
 }
 
+/* istanbul ignore next */
 class Man extends Person {
-  /*   laughing() {
-      console.log(`${this.name} смеетя так: Гы-гы`);
-    } */
+  laughing() {
+    console.log(`${this.name} смеетя так: Гы-гы`);
+  }
 }
 
 const Ina = new Woman('Ina', 18, 'F');

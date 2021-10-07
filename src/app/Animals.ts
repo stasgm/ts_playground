@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 abstract class Animal {
   readonly name: string;
   readonly speed = 1;
@@ -26,7 +27,11 @@ class Dog extends Animal {
   }
 }
 
+const dog = new Dog('Fox');
+dog.makeSound();
+
 const cat = new Cat('Nox');
+
 cat.makeSound();
 console.log('name', cat.name);
 
